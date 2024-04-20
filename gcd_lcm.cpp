@@ -12,7 +12,7 @@ int gcd(int a,int b)
 
 int lcm(int a,int b)
 {
-    int gc = gcd(max(a,b),min(a,b));
+    int gc = gcd(a,b);
     int lcm = (a * b) / gc;
     return lcm;
 }
@@ -23,7 +23,7 @@ int main()
     cout<<"Enter 2 numbers : ";
     cin>>a>>b;
 
-    cout<<"GCD of 2 numbers : "<<gcd(max(a,b),min(a,b))<<endl;
+    cout<<"GCD of 2 numbers : "<<gcd(a,b)<<endl;
     cout<<"LCM of 2 numbers : "<<lcm(a,b)<<endl;
     return 0;
 }
